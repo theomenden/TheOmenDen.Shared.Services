@@ -37,5 +37,9 @@
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="TheOmenDen.Shared" Version="2022.7.26.331" />
   </ItemGroup>
-
+	<Target Name="SetPackageVersion" DependsOnTargets="Build">
+		<PropertyGroup>
+			<PackageVersion>$([System.DateTime]::Now.ToString("1.MM.dd.HHss"))</PackageVersion>
+		</PropertyGroup>
+	</Target>
 </Project>
