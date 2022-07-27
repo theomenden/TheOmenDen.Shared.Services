@@ -8,6 +8,8 @@
 
 ### Of course, while we have the implementations defined in this library, we also have the dependency injection defined. The way it _should_ work is by inheriting from either the `ApiServiceBase` or the `ApiStreamServiceBase` abstract classes, and then calling the `IserviceCollection` extension `AddTheOmenDenHttpServices` to allow `scrutor` to register them into the dependency injection container.
 - This was done in an attempt to streamline and smooth out my poor memory when it comes to registering services.
+- Note the use of `Polly` in this library to define automatic retry policies for `HttpClients`.
+- We also have a class - HttpClientConfiguration for your convinience when it comes to registering named clients via appsettings, or some other form of `Action` "passing"
   
 ## As usual, here are the rationales for the services
 ### 1. `ApiServiceBase<T>`
