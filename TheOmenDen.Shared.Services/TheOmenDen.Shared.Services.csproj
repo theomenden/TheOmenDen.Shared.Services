@@ -46,7 +46,7 @@
     <PackageReference Include="Scrutor.AspNetCore" Version="3.3.0" />
     <PackageReference Include="System.Interactive.Async" Version="6.0.3" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
-    <PackageReference Include="TheOmenDen.Shared" Version="2022.11.13.2149" />
+    <PackageReference Include="TheOmenDen.Shared" Version="2023.11.27.49" />
     <PackageReference Include="TheOmenDen.Shared.Interfaces" Version="1.11.13.2216" />
   </ItemGroup>
 
